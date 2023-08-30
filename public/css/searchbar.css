@@ -3,20 +3,9 @@
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
-    border-radius: 4px;
-    padding: 8px;
+    border-radius: 40px;
+    padding: 4px;
     justify-content: space-between; /* Para alinear elementos a los lados */
-}
-
-/* Estilo para el menú desplegable de categorías */
-.input-selectcat {
-    border: none;
-    background: transparent;
-    font-size: 14px;
-    color: #333;
-    flex-grow: 1;
-    margin-right: 8px; /* Espacio entre el menú desplegable y la barra de búsqueda */
-    width: 25%; /* Ajusta el ancho según tus necesidades */
 }
 
 /* Estilo para el campo de entrada de texto */
@@ -27,23 +16,30 @@
     color: #333;
     flex-grow: 1;
     margin-right: 8px; /* Espacio entre la barra de búsqueda y el botón */
-    width: 35%; /* Ajusta el ancho según tus necesidades */
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    padding: 0px 15px;
 }
 
 /* Estilo para el botón de búsqueda */
 .search-botn {
-    background-color: #D10024;
-    border: none;
-    padding: 10px 12px; /* Ajusta el tamaño del botón según tus necesidades */
-    border-radius: 4px;
-    cursor: pointer;
-    width: 10%; /* Ajusta el ancho del botón según tus necesidades */
-    display: flex; /* Para centrar el ícono verticalmente */
-    align-items: center; /* Para centrar el ícono verticalmente */
-    justify-content: center; /* Para centrar el ícono horizontalmente */
+        width: 160px;
+        height: 40px;
+        font-weight: 700;
+        background: #D10024;
+        color: #FFF;
+        border: none;
+        border-radius: 0px 40px 40px 0px;
+}
+.search-botn:hover{
+    background-color: #9a001a;
 }
 
-/* Estilo para el ícono dentro del botón */
-.search-botn svg {
-    vertical-align: middle;
+.inputsrch{
+    height: 40px;
+    border-start-start-radius: 40px;
+    border-end-start-radius: 40px;
+}
+
+.dropdown{
+    cursor: pointer;
 }
