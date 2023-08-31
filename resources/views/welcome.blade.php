@@ -230,7 +230,9 @@
 			<!-- /container -->
 		</nav>
 		<!-- /NAVIGATION -->
-
+		<button><a href="{{route('productos.index')}}">Productos</a></button>
+		<button><a href="{{route('marcas.index')}}">Marcas</a></button>
+		<button><a href="{{route('tipos.index')}}">Tipos</a></button>
 		<div class="section">
 			<!-- container -->
 			<div class="container">
