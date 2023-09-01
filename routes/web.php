@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('welcome');});
-
+Route::get('/', function () {return view('welcome');})->name('welcome');
+/* Route::get('dashboard', function () {return view('welcome');}); */
 /*TIPO*/
 Route::get('tipos/Index',[App\Http\Controllers\TiposController::class, 'index'])->name('tipos.index');
 Route::get('tipos/create',[App\Http\Controllers\TiposController::class,'create'])->name('tipos.create');
