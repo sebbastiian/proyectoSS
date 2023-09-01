@@ -13,6 +13,8 @@
  		<!-- Bootstrap -->
  		<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"/>
 
+        <script src="/js/bootstrap.min.js"> </script>
+
  		<!-- Slick -->
  		<link type="text/css" rel="stylesheet" href="/css/slick.css"/>
  		<link type="text/css" rel="stylesheet" href="/css/slick-theme.css"/>
@@ -53,14 +55,14 @@
     
     
         <!-- MAIN HEADER -->
-        <div id="header" class="displayheader">
+        <div id="header" class="displayheader transform-scale-3">
             <div class="container">
                 <div class="row displayheader">
                     <!-- LOGO -->
                     <div class="col-md-2">
                         <div class="header-logo">
-                            <a href="#" class="logo">
-                                <img src="./img/logomd.png" alt="" style="width: 100px">
+                            <a href="{{route('dashboard')}}" class="logo">
+                                <img src="{{asset('img/logomd.png')}}" alt="" style="width: 100px">
                             </a>
                         </div>
                     </div>
@@ -124,23 +126,21 @@
 
 
         <!-- /MAIN HEADER -->
-<x-app-layout>    <x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-        {{ __('Profile') }}
-    </h2>
-</x-slot></x-app-layout>
+    <x-app-layout>    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Profile') }}
+        </h2>
+    </x-slot></x-app-layout>
 
 
 
 
 </body>
 </html>
-
-<div>
+<div class="dark:bg-gray-800 transform-scale-3">
     <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
         @if (Laravel\Fortify\Features::canUpdateProfileInformation())
             @livewire('profile.update-profile-information-form')
-
             <x-section-border />
         @endif
 

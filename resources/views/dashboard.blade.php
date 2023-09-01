@@ -182,7 +182,7 @@
                     <!-- LOGO -->
                     <div class="col-md-2">
                         <div class="header-logo">
-                            <a href="#" class="logo">
+                            <a href="{{route('welcome')}}" class="logo">
                                 <img src="./img/logomd.png" alt="" style="width: 100px">
                             </a>
                         </div>
@@ -260,6 +260,9 @@
                     <li><a href="#">Categorias</a></li>
                     <li><a href="#">Marcas</a></li>
                     <li><a href="#">Tipos</a></li>
+                    <li><a href="{{route('productos.index')}}">Productos (Admin)</a></li>
+                    <li><a href="{{route('marcas.index')}}">Marcas (Admin)</a></li>
+                    <li><a href="{{route('tipos.index')}}">Tipos (Admin)</a></li> 
                 </ul>
                 <!-- /NAV -->
             </div>
@@ -268,9 +271,7 @@
         <!-- /container -->
         </nav>
         <!-- /NAVIGATION -->
-        <button><a href="{{route('productos.index')}}">Productos</a></button>
-        <button><a href="{{route('marcas.index')}}">Marcas</a></button>
-        <button><a href="{{route('tipos.index')}}">Tipos</a></button>
+
         <div class="section">
         <!-- container -->
         <div class="container">
