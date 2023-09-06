@@ -96,7 +96,7 @@
                 <label for="idtipo">Tipo</label>
                 <select name="idtipo" id="idtipo" class="form-control">
                     @foreach($tipos as $prods)
-                    <option value="{{$prods->idtipo}}">{{$prods->idtipo}}</option>
+                    <option value="{{$prods->idtipo}}">{{$prods->nombre}}</option>
                     @endforeach
                 </select>
             </div>
@@ -105,7 +105,7 @@
                 <label for="idmarca">Marca</label>
                 <select name="idmarca" id="idmarca" class="form-control">
                     @foreach($marcas as $prod)
-                    <option value="{{$prod->idmarca}}">{{$prod->idmarca}}</option>
+                    <option value="{{$prod->idmarca}}">{{$prod->nombre}}</option>
                     @endforeach
                 </select>
             </div>
@@ -133,7 +133,6 @@
             <div>
                 <select name="disponibilidad" class="form-control">
                     <option value="Disponible">Disponible</option>
-                    <option value="NoDisponible">No Disponible</option>
                 </select>
             </div>
     

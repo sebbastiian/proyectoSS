@@ -19,7 +19,7 @@ class ProductosController extends Controller
         $productos = DB::table('productos')
         ->join('tipos', 'productos.idtipo', '=', 'tipos.idtipo')
         ->join('marcas', 'productos.idmarca', '=', 'marcas.idmarca')
-        ->select('productos.idproducto','productos.descripcion','productos.cantidad','productos.contneto','productos.unidadxempaque','productos.disponibilidad','productos.valor','productos.imagen','tipos.idtipo','marcas.idmarca')
+        ->select('productos.idproducto','productos.descripcion','productos.cantidad','productos.contneto','productos.unidadxempaque','productos.disponibilidad','productos.valor','productos.imagen','tipos.idtipo','tipos.nombre','marcas.idmarca','marcas.nombre')
         ->orderby('productos.descripcion','ASC')->get();
 
         //$productos = productos::orderBy('descripcion', 'ASC')->get();

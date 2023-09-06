@@ -97,22 +97,22 @@
         <legend>Editar Datos del Producto</legend>
         <div>
             <label for="descripcion">Descripcion del producto</label>
-            <input type="text" name="descripcion" id="descripcion" >
+            <input type="text" name="descripcion" id="descripcion" value="{{$productos->descripcion}}">
         </div>
 
         <div>
             <label for="cantidad">Cantidad del producto</label>
-            <input type="number" name="cantidad" id="cantidad" >
+            <input type="number" name="cantidad" id="cantidad" value="{{$productos->cantidad}}">
         </div>
 
         <div>
             <label for="contneto">Contenido Neto</label>
-            <input type="text" name="contneto" id="contneto" >
+            <input type="text" name="contneto" id="contneto" value="{{$productos->contneto}}" >
         </div>
 
         <div>
             <label for="unidadxempaque">Unidad x Empaque</label>
-            <input type="number" name="unidadxempaque" id="unidadxempaque" >
+            <input type="number" name="unidadxempaque" id="unidadxempaque" value="{{$productos->unidadxempaque}}">
         </div>
 
         <div>
@@ -124,7 +124,7 @@
 
         <div>
             <label for="valor">Valor del producto</label>
-            <input type="text" name="valor" id="valor" >
+            <input type="text" name="valor" id="valor" value="{{$productos->valor}}" >
         </div>
     
         <div>
